@@ -1,0 +1,223 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.navbar .logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    font-family: Roboto;
+    color: white;
+    text-decoration: none;
+}
+
+.shop-now a {
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.shop-now a:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Estilos de la sección de suscripción */
+.subscription-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.subscription-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subscription-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario de suscripción */
+.subscription-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription-form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.subscription-form input[type="text"],
+.subscription-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.subscription-form button:hover {
+    background-color: #555;
+}
+
+/* Para pantallas grandes */
+@media screen and (max-width: 1200px) {
+    .navbar .nav-links {
+        flex-direction: row;
+        margin-left: auto;
+    }
+
+    .shop-now a {
+        padding: 8px 20px;
+    }
+
+    .subscription-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .subscription-form {
+        width: 80%;
+    }
+
+    .subscription-form input[type="text"],
+    .subscription-form input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .subscription-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para tabletas */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .subscription-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .subscription-section p {
+        font-size: 0.9rem;
+    }
+
+    .subscription-form {
+        width: 90%;
+    }
+
+    .subscription-form input[type="text"],
+    .subscription-form input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    .subscription-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo h1 {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links li {
+        margin-bottom: 8px;
+    }
+
+    .subscription-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .subscription-section p {
+        font-size: 0.8rem;
+    }
+
+    .subscription-form {
+        width: 95%;
+    }
+
+    .subscription-form input[type="text"],
+    .subscription-form input[type="email"] {
+        font-size: 0.8rem;
+    }
+
+    .subscription-form button {
+        font-size: 0.8rem;
+    }
+
+    .shop-now a {
+        padding: 6px 12px;
+    }
+}

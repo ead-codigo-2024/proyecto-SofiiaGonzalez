@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA CAV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesreportajes.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">LA CAV</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="index.html#descubre-section">Descubre</a></li>
+                <li><a href="index.html#editorial-section">Editorial</a></li>
+                <li><a href="index.html#contact-content">Contacto</a></li>
+            </ul>
+            <div class="shop-now">
+                <a href="#">Suscríbete</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero-section text-white">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>REPORTAJES</h2>
+            <h1>Descubre novedades y más</h1>
+        </div>
+    </section>
+    
+    <!-- Segunda parte de la página -->
+    <section class="wine-gallery">
+        <div class="wine-list-section">
+            <div class="wine-list">
+                <div class="wine-item" onclick="showWineInfo(0)">
+                    <h3 class="wine-label">VINO Y SALUD</h3>
+                    <img src="imagenes/reportaje1.jpg" alt="Vino Icono">
+                </div>
+                <div class="wine-item" onclick="showWineInfo(1)">
+                    <h3 class="wine-label">ETIQUETAS PREFERIDAS</h3>
+                    <img src="imagenes/reportaje2.jpg" alt="Vino 2">
+                </div>
+                <div class="wine-item" onclick="showWineInfo(2)">
+                    <h3 class="wine-label">EL CAFÉ 2.0</h3>
+                    <img src="imagenes/reportaje3.jpg" alt="Vino 3">
+                </div>
+            </div>
+        </div>
+    
+        <div class="wine-info-section">
+            <div class="wine-info">
+                <div class="wine-info-item" id="wine-0">
+                    <div class="wine-info-content">
+                        <img src="imagenes/reportaje1.jpg" alt="Reportaje 1" class="wine-image">
+                        <div class="wine-details">
+                            <p>BENEFICIOS DEL CONSUMO MODERADO</p>
+                            <h2>La nueva paradoja del vino y la salud</h2>
+                            <p> A partir de una directriz de la Organización Mundial de la Salud del año pasado, que afirmaba que ninguna cantidad de alcohol es saludable, se desató una controversia sobre estudios científicos, sesgos e intereses, que intentaron derribar casi cuatro décadas de evidencia positiva sobre la salud y el consumo moderado de vino. ¿Continúa la battalla?. Lee el reportaje completo en la revista!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-1">
+                    <div class="wine-info-content">
+                        <img src="imagenes/reportaje2.jpg" alt="Reortaje 2" class="wine-image">
+                        <div class="wine-details">
+                            <p>PREFERENCIAS</p>
+                            <h2>Las etiquetas de vinos preferidas por los restauranteros</h2>
+                            <p> Quisimos conocer cómo funcionan la cabeza y los gustos de algunos de los dueños de restaurantes más interesantes en la relación enogastronómica Aunque costó al principio que se jugaran por explicitar sus preferencias, logramos desnudar sus gustos y entender a estos locales donde el vino es el actor principal. Lee el reportaje completo en la revista!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-2">
+                    <div class="wine-info-content">
+                        <img src="imagenes/reportaje3.jpg" alt="Reportaje 3" class="wine-image">
+                        <div class="wine-details">
+                            <p>EL CAFÉ 2.0</p>
+                            <h2>La especialidad y más allá</h2>
+                            <p> ¿Qué se requiere hoy  para considerarse una cafetería con nivel? ¿Cuáles son las tendencia en granos, en el trabajo de las tostadurías o el rol del barista? ¿Qué tan geek se puede ser hoy en términos de máquinas o cómo cambió (para bien) la pandemia el ambiente cafetero nacional? Varias de esas interrogantes se explican en una nota que, a su vez, sirve de ayuda memoria en medio del atomizado y sabroso ambiente, que bulle sorbo tras sorbo. Lee el reportaje completo en la revista!.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-3">
+                    <div class="wine-info-content">
+                        <img src="imagenes/casa-montero-blanco.jpg" alt="Vino 4" class="wine-image">
+                        <div class="wine-details">
+                            <p>DEL AUTOR</p>
+                            <h2>Casa Montero, RESERVA DE FAMILIA</h2>
+                            <p><strong>Enólogo:</strong> Alfonso Duarte.</p>
+                            <p><strong>Ficha Técnica:</strong> 95% merlot, 5% carmenére.</p>
+                            <p><strong>Armonía:</strong> Cerdo, pastas.</p>
+                            <p><strong>Notas de Cata:</strong> Rojo rubí con ribetes cereza. Aromas a frutas negras, guindas, moras y cerezas. En boca es acidez media y final medio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-4">
+                    <div class="wine-info-content">
+                        <img src="imagenes/viu-manent-secreto-blanco.jpg" alt="Vino 5" class="wine-image">
+                        <div class="wine-details">
+                            <p>GRAN RESERVA</p>
+                            <h2>Viu Manent, SECRETO</h2>
+                            <p><strong>Enólogo:</strong> Patricio Celedón.</p>
+                            <p><strong>Ficha Técnica:</strong> 100% malbec.</p>
+                            <p><strong>Armonía:</strong> Carnes rojas, cordero.</p>
+                            <p><strong>Notas de Cata:</strong> Rojo ciruela. Naríz perfumada, violeta, hojas secas, tabaco. En boca es dulce de cuerpo medio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-5">
+                    <div class="wine-info-content">
+                        <img src="imagenes/bestia-azul-blanco.jpg" alt="Vino 6" class="wine-image">
+                        <div class="wine-details">
+                            <p>RESERVA</p>
+                            <h2>Bestias Wines, BESTIA AZUL</h2>
+                            <p><strong>Enólogo:</strong> Andrés Leiva.</p>
+                            <p><strong>Ficha Técnica:</strong> 100% carmenére.</p>
+                            <p><strong>Armonía:</strong> Carnes rojas, cocina chilena.</p>
+                            <p><strong>Notas de Cata:</strong> Rojo púrpura con ribetes ciruela. Aroma especiado con notas tostadas, caramelo y ciruelas. En boca es acidez media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wine-info-item" id="wine-6">
+                    <div class="wine-info-content">
+                        <img src="imagenes/Undurraga-extra-brut-blanco.jpg" alt="Vino 7" class="wine-image">
+                        <div class="wine-details">
+                            <p>ESPUMANTE</p>
+                            <h2>Undurraga, EXTRA BRUT</h2>
+                            <p><strong>Enólogo:</strong> Carlos Concha.</p>
+                            <p><strong>Ficha Técnica:</strong> 80% chardonnay, 13% riesling y 7% sauvignon blanc.</p>
+                            <p><strong>Armonía:</strong> Mariscos, crustáceos.</p>
+                            <p><strong>Notas de Cata:</strong> Amarillo verdoso brillante. Burbuja fina y constante que forma corona. En boca es acidez media-alta, cremoso, notas a miel y piña verde.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vinculación del archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>

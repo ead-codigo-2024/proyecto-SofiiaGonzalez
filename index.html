@@ -10,7 +10,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+    /* Estilo para desplazamiento suave */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 </head>
 <body>
 <!-- Primera Parte de la Página -->
@@ -21,11 +30,10 @@
                 <h1>LA CAV</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Editorial</a></li>
-                <li><a href="#">La revista</a></li>
-                <li><a href="vinosdelmes.html">Vinos del mes</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="#descubre-section">Descubre</a></li>
+                <li><a href="#editorial-section">Editorial</a></li>
+                <li><a href="#contact-content">Contacto</a></li>
             </ul>
             <div class="shop-now">
                 <a href="suscrip.html">Suscríbete</a>
@@ -37,37 +45,82 @@
     <section class="hero-section">
         <div class="overlay"></div>
         <div class="content">
-            <h2>O C T U B R E</h2>
+            <h2>R E V I S T A</h2>
             <h1>LA CAV</h1>
-            <p>Pasión que nos une! - Club de amantes del vino</p>
+            <p>PASIÓN QUE NOS UNE! - CLUB AMANTES DEL VINO</p>
         </div>
     </section>
+     <!-- Segunda Parte de la Página -->
+<section id="sobre-nosotros" class="about-section">
+    <div class="about-content">
+        <h2>Sobre Nosotros</h2>
+        <p>La CAV es la revista de vinos más reconocida de Chile, dedicada a todos los amantes del buen vino, la gastronomía y el enoturismo. Desde su fundación, La CAV ha sido un referente para quienes buscan explorar y disfrutar del fascinante mundo vitivinícola, entregando contenido exclusivo y de calidad, que abarca desde reseñas de vinos y bodegas, hasta entrevistas con enólogos y expertos del rubro.
+            Cada edición de La CAV es una invitación a descubrir nuevas experiencias, con un enfoque en la cultura del vino chileno e internacional. A través de artículos cuidadosamente elaborados, guías de degustación y recomendaciones, conectamos a nuestros lectores con las mejores etiquetas, catas y eventos del país. Nuestro compromiso es educar, informar y deleitar a una audiencia exigente, apasionada y en constante búsqueda de lo mejor que el mundo del vino tiene para ofrecer..</p>
+    </div>
+</section>
 
-    <!-- Segunda Parte de la Página -->
-    <section class="info-section">
-        <div class="info-container">
-            <div class="info-box">
-                <a href="the-winery.html">
-                    <img src="imagenes/Cocina.jpg" alt="The Winery">
-                    <div class="info-text">
-                        <h2>COMER Y BEBER</h2>
-                        <p>Conoce restaurantes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="info-box">
-                <a href="vinosdelmes.html">
-                    <img src="imagenes/Georgian wines.jpg" alt="The Tasting Room">
-                    <div class="info-text">
-                        <h2>VINOS DEL MES</h2>
-                        <p>Selección de vinos</p>
-                    </div>
-                </a>
-            </div>
+<!-- Tercera Parte de la Página -->
+<section id="descubre-section" class="info-section">
+    <div class="info-container">
+        <div class="info-box">
+            <a href="Comerybeber.html">
+                <img src="imagenes/comerybeber.jpg" alt="The Winery">
+                <div class="info-text">
+                    <h2>COMER Y BEBER</h2>
+                    <p>Conoce restaurantes</p>
+                </div>
+            </a>
         </div>
-        <div class="vineyard-info">
-            <p>65 acres of vineyards in the South Okanagan Valley with 24 acres on the fruit-growing belt of the Golden Mile.</p>
+        <div class="info-box">
+            <a href="vinosdelclub.html">
+                <img src="imagenes/selecciondevinos.jpg" alt="The Tasting Room">
+                <div class="info-text">
+                    <h2>VINOS DEL CLUB</h2>
+                    <p>Selección de vinos</p>
+                </div>
+            </a>
+        </div>
+        <div class="info-box">
+            <a href="Reportajes.html">
+                <img src="imagenes/reportajevino.jpg" alt="reportajesimg">
+                <div class="info-text">
+                    <h2>REPORTAJES</h2>
+                    <p>Descubre novedades</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="vineyard-info">
+    </div>
+</section>
+     <!-- Cuarta Parte de la Página -->
+     <section id="editorial-section" class="editorial-section">
+        <div class="editorial-content">
+            <h2>Hagamos al vino grande de nuevo</h2>
+            <h3>No sé si fue una suerte de revelación, pero durante una conversación de trabajo con alguien que no es del vino me decía que generalmente se ponía de mal humor o  desesperanzado con mis editoriales. Y, bueno, no pretendo convertirme en Juana de Arco, pero hay algunas brisas que me parecen positivas y que es bueno reconocer... </h3>
+            <h3>[...] Y el foco de esta editorial es celebrar la fantástica vida de tantos enamorados del vino. Durante marzo y abril la cartelera de eventos, cenas, catas, fiestas de la vendimia nos hace ver como lo que deberíamos ser siempre: un país productor profundamente orgulloso de esta bebida. A pesar de la demonización que rodea a los alcoholes, tal como reza el artículo central de esta edición, creemos que seguirá un camino que nunca ha sido fácil pero que involucra siglos de cultura y está enraizado en tradiciones humanas tan nobles como compartir, celebrar, llorar, conversar y mirarse a los ojos con una copa... varios de ustedes están llamados a seguir siendo protagonistas. Hagamos al vino grande de nuevo. Suena bien ¿no? ¡Salud!</h3>
+            <p>Ana María Barahona A.</p>
+            <p>Directora editorial</p>
         </div>
     </section>
+    <script>
+        function toggleForm() {
+            const form = document.getElementById("subscriptionForm");
+            form.style.display = form.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+    <!-- Sección de Contacto -->
+<footer class="contact-section">
+    <div id="contact-content" class="contact-content">
+        <h2>Contacto</h2>
+        <p>Teléfono: +562 2393 8000</p>
+        <div class="social-media">
+            <a href="https://web.facebook.com/LACAV" target="_blank">Facebook</a>
+            <a href="https://x.com/LA_CAV" target="_blank">X</a>
+            <a href="https://www.instagram.com/la.cav/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@la_cav/" target="_blank">Tik Tok</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

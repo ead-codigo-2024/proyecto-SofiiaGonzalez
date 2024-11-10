@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA CAV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylescomerybeber.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">LA CAV</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
+                <li><a href="index.html#descubre-section">Descubre</a></li>
+                <li><a href="index.html#editorial-section">Editorial</a></li>
+                <li><a href="index.html#contact-content">Contacto</a></li>
+            </ul>
+            <div class="shop-now">
+                <a href="#">Suscríbete</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero-section text-white">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>COMER Y BEBER</h2>
+            <h1>Nuestra selección de restaurentes para acompañar tu copa de vino</h1>
+        </div>
+    </section>
+    
+    <!-- Segunda parte de la página -->
+    <section class="wine-gallery">
+        <div class="wine-list-section">
+            <div class="wine-list">
+                <div class="wine-item" onclick="showWineInfo(0)">
+                    <h3 class="wine-label">PULPERÍA SANTA ELVIRA</h3>
+                    <img src="imagenes/PulperiaSantaElvira.jpg" alt="Pulpería">
+                </div>
+                <div class="wine-item" onclick="showWineInfo(1)">
+                    <h3 class="wine-label">BACK ROOM</h3>
+                    <img src="imagenes/backroom-bar-santiago.jpg" alt="Back room">
+                </div>
+                <div class="wine-item" onclick="showWineInfo(2)">
+                    <h3 class="wine-label">HINORI</h3>
+                    <img src="imagenes/honiri.jpg" alt="hinori">
+                </div>
+            </div>
+        </div>
+
+        <div class="wine-info-section">
+            <div class="wine-info-item" id="wine-0">
+                <div class="wine-info-content">
+                    <img src="imagenes/Pulpería-Santa-Elvira-2.jpg" alt="Vino Icono" class="wine-image">
+                    <div class="wine-details">
+                        <p>PULPERÍA SANTA ELVIRA</p>
+                        <h2>La sazón de Guatemala y Sao Paulo</h2>
+                        <p> "Al invitar a un colega extrangero, un chef amplía la diversidad de la escuela culinaria y se forma una verdadera fiesta". Con ello concuerda Javier Avilés, al frente de la pulpería, quien sostiene que estos eventos enriquecen a profesionales y comensales por igual, exponiendolos a técnicas, sabores y tradiciones trascienden fronteras.</p>
+                        <p><strong>Datos:</strong> Santa Elvira 475, Santiago. Dos turnos para cada pop up, a las 19:00 y a las 21:30 horas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wine-info-item" id="wine-1">
+                <div class="wine-info-content">
+                    <img src="imagenes/backroom-info.jpg" alt="Vino 2" class="wine-image">
+                    <div class="wine-details">
+                        <p>BACK ROOM</p>
+                        <h2>La propuesta audaz de Back Room</h2>
+                        <p> Una ventana de cócteles que desafían los gustos arraigados a la cultura nocturna santiaguina, música en vivo todos los días y una última ronda que se sirve pasadas las 03:30 de la mañana. Todo eso y más ofrece Black Room, el bar abierto a principiios de marzo.</p>
+                        <p><strong>Datos:</strong> Pérez Valenzuela 1470, Santiago. Domingo a miércoles de 18:00 a 02:00. Jueves a sábado de 18:00 a 04:00.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wine-info-item" id="wine-2">
+                <div class="wine-info-content">
+                    <img src="imagenes/tacos_de_sushi.jpg" alt="Vino 3" class="wine-image">
+                    <div class="wine-details">
+                        <p>HINORI</p>
+                        <h2>Tacos de sushi en Barrio Italia</h2>
+                        <p> Inspirados en una tendencia que se generó en los sushi bar de Londres, el ingeniero Anderson Zerpa y la publicista Mari Sepúlveda abrieron a principios de marzo HiNori. Un pequeño proyecto gastronómico, ubicado en el Patio Girardi, donde las especialidades sin los pokes y los "noritacos".</p>
+                        <p><strong>Datos:</strong> Girardi 1365, Santiago. Martes a sábado de 12:00 y 22:00. Domingos de 13:00 a 18:00 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scriptcomerybeber.js"></script>
+</body>
+</html>
